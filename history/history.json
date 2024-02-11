@@ -2,13 +2,22 @@
   "42b4a115007c35c622675a0baedb491a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "9615c96399bb5df7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <form class=\"oxd-form\" novalidate=\"\" data-v-d5bfe35b=\"\" data-v-8c6e0396=\"\">...</form>\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1707652700521,
+        "stop" : 1707652707877,
+        "duration" : 7356
+      }
+    }, {
       "uid" : "b0c2bfd36d8cd8d7",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <form class=\"oxd-form\" novalidate=\"\" data-v-d5bfe35b=\"\" data-v-8c6e0396=\"\">...</form>\n  (Session info: headless chrome=112.0.5615.165)",
