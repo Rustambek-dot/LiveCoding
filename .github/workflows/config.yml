@@ -6,13 +6,16 @@ on:
       deployment_target:
         description: Choose target
         required: true
+        default: good
         type: choice
         options:
+          - good
           - bad
 jobs:
   ui-tests:
     runs-on: ubuntu-latest
     outputs:
+      good: ${{ steps.good.outcome }}
       bad: ${{ steps.bad.outcome }}
       steps:
         - name: Checkout repository
@@ -23,6 +26,11 @@ jobs:
             python-version: "3.10"
         - name: install dependencies
           run: pip install -r requirements.txt
+        - name: good
+          id: good
+          if: "github.event.inputs.deployment_target == 'good'"
+          run: pytest -m good --alluredir=allure-results
+          continue-on-error: true
         - name: bad
           id: bad
           if: "github.event.inputs.deployment_target == 'bad'"
