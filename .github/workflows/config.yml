@@ -1,19 +1,54 @@
 name: UI Tests
 
-on: workflow_dispatch
-
+on:
+  workflow_dispatch:
+    inputs:
+      deployment_target:
+        description: Choose target
+        required: true
+        type: choice
+        options:
+          - bad
 jobs:
   ui-tests:
     runs-on: ubuntu-latest
-
+    outputs:
+      bad: ${{ steps.bad.outcome }}
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        - name: setup Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.10"
+        - name: install dependencies
+          run: pip install -r requirements.txt
+        - name: bad
+          id: bad
+          if: "github.event.inputs.deployment_target == 'bad'"
+          run: pytest -m bad --alluredir=allure-results
+          continue-on-error: true
+        - uses: actions/setup-java@v4
+          with:
+            distribution: 'microsoft' # See 'Supported distributions' for available options
+            java-version: '17'
+        - run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.23.1/allure-2.23.1.tgz && sudo tar -zxvf allure-2.23.1.tgz -C /opt/ && sudo ln -s /opt/allure-2.23.1/bin/allure /usr/bin/allure
+        - run: allure generate -c allure-results -o _site
+        - name: Store generated report
+          uses: actions/upload-artifact@v4
+          with:
+            name: _site
+            path:
+              _site
+            retention-days: 1
     steps:
       - uses: actions/checkout@v2
 
       - name: Checkout (copy) gh-pages repository to GitHub runner
         uses: actions/checkout@v2
         with:
-            ref: gh-pages
-            path: ./.github/gh-pages
+          ref: gh-pages
+          path: ./.github/gh-pages
 
       - name: Run UI-tests via docker-compose
         env:
