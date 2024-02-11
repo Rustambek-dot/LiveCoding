@@ -23,6 +23,15 @@ jobs:
 
       - name: Checkout (copy) gh-pages repository to GitHub runner
         uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: ./.github/gh-pages
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: setup Python
+        uses: actions/setup-python@v5
+      - name: install dependencies
+        run: pip install -r requirements.txt
       - name: good
         id: good
         if: "github.event.inputs.deployment_target == 'good'"
@@ -33,9 +42,7 @@ jobs:
         if: "github.event.inputs.deployment_target == 'bad'"
         run: pytest -m bad --alluredir=allure-results
         continue-on-error: true
-        with:
-          ref: gh-pages
-          path: ./.github/gh-pages
+
 
       - name: Run UI-tests via docker-compose
         env:
