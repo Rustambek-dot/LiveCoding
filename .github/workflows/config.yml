@@ -30,6 +30,11 @@ jobs:
       - name: Generate Allure report
         run: |
           sudo docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+      - name: send notification
+        run: |
+          curl --location 'https://hooks.slack.com/services/${{ secrets.st_slack }} --header 'limit: 5'\ --header 'Content-Type:application/json'\--data '{"text":":testing finished. Report is here: https://rustambek-dot.github.io/LiveCoding/"}'
+
+
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
