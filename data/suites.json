@@ -8,13 +8,26 @@
         "name" : "TestProfileFeature",
         "children" : [ {
           "name" : "test_two",
-          "uid" : "596e952d0956b45a",
+          "uid" : "280de8560b4b3a65",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "failed",
           "time" : {
             "start" : 1707755744645,
             "stop" : 1707755744646,
             "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Change profile name",
+          "uid" : "5e169d903801df6b",
+          "parentUid" : "ecec602510fca8558358a9e53be22b2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707756385022,
+            "stop" : 1707756395624,
+            "duration" : 10602
           },
           "flaky" : false,
           "newFailed" : false,

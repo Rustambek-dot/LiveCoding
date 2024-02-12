@@ -1,5 +1,5 @@
 [ {
-  "uid" : "596e952d0956b45a",
+  "uid" : "280de8560b4b3a65",
   "name" : "test_two",
   "time" : {
     "start" : 1707755744645,
@@ -8,4 +8,14 @@
   },
   "status" : "failed",
   "severity" : "normal"
+}, {
+  "uid" : "5e169d903801df6b",
+  "name" : "Change profile name",
+  "time" : {
+    "start" : 1707756385022,
+    "stop" : 1707756395624,
+    "duration" : 10602
+  },
+  "status" : "passed",
+  "severity" : "critical"
 } ]

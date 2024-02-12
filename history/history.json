@@ -1,14 +1,23 @@
 {
   "0e8b9fd43ab9db5cd07116323b9d06f6" : {
     "statistic" : {
-      "failed" : 3,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "280de8560b4b3a65",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1707755744645,
+        "stop" : 1707755744646,
+        "duration" : 1
+      }
+    }, {
       "uid" : "596e952d0956b45a",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
@@ -58,11 +67,19 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 12,
+      "passed" : 13,
       "unknown" : 0,
-      "total" : 17
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "5e169d903801df6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707756385022,
+        "stop" : 1707756395624,
+        "duration" : 10602
+      }
+    }, {
       "uid" : "bfd71b901b79971c",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",

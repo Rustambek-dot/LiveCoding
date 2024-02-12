@@ -1,0 +1,434 @@
+{
+  "uid" : "5e169d903801df6b",
+  "name" : "Change profile name",
+  "fullName" : "tests.feature_profile_test.TestProfileFeature#test_change_profile_name",
+  "historyId" : "42b4a115007c35c622675a0baedb491a",
+  "time" : {
+    "start" : 1707756385022,
+    "stop" : 1707756395624,
+    "duration" : 10602
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707756384270,
+      "stop" : 1707756385022,
+      "duration" : 752
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1707756385022,
+      "stop" : 1707756385022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://opensource-demo.orangehrmlive.com/web/index.php/auth/login page",
+      "time" : {
+        "start" : 1707756385022,
+        "stop" : 1707756387094,
+        "duration" : 2072
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1707756387094,
+        "stop" : 1707756388150,
+        "duration" : 1056
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'Admin'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1707756388150,
+        "stop" : 1707756388219,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "'admin123'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click submit button",
+      "time" : {
+        "start" : 1707756388219,
+        "stop" : 1707756388261,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index is opened",
+      "time" : {
+        "start" : 1707756388261,
+        "stop" : 1707756389250,
+        "duration" : 989
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click on 'My Info' link",
+      "time" : {
+        "start" : 1707756389251,
+        "stop" : 1707756391090,
+        "duration" : 1839
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7 is opened",
+      "time" : {
+        "start" : 1707756391090,
+        "stop" : 1707756391092,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Change name on 'Test 62'",
+      "time" : {
+        "start" : 1707756391092,
+        "stop" : 1707756392182,
+        "duration" : 1090
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Save changes",
+      "time" : {
+        "start" : 1707756392182,
+        "stop" : 1707756392390,
+        "duration" : 208
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Changes has been saved successfuly",
+      "time" : {
+        "start" : 1707756392391,
+        "stop" : 1707756395456,
+        "duration" : 3065
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "2afd8d11af9becd6",
+      "name" : "Success",
+      "source" : "2afd8d11af9becd6.png",
+      "type" : "image/png",
+      "size" : 166126
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 10
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1707756395624,
+      "stop" : 1707756395708,
+      "duration" : 84
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Profile Functionality"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "feature_profile_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProfileFeature"
+  }, {
+    "name" : "host",
+    "value" : "2202bbfb9fea"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.feature_profile_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 18
+      },
+      "items" : [ {
+        "uid" : "bfd71b901b79971c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1707755995591,
+          "stop" : 1707756016721,
+          "duration" : 21130
+        }
+      }, {
+        "uid" : "e40143ffd9df2485",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707755459117,
+          "stop" : 1707755469454,
+          "duration" : 10337
+        }
+      }, {
+        "uid" : "6b56e52358be0376",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <form class=\"oxd-form\" novalidate=\"\" data-v-d5bfe35b=\"\" data-v-8c6e0396=\"\">...</form>\n  (Session info: headless chrome=112.0.5615.165)",
+        "time" : {
+          "start" : 1707755111616,
+          "stop" : 1707755120255,
+          "duration" : 8639
+        }
+      }, {
+        "uid" : "d483d5106ae436b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707754968314,
+          "stop" : 1707754978058,
+          "duration" : 9744
+        }
+      }, {
+        "uid" : "bc70b7d258d51bb6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707754694446,
+          "stop" : 1707754705296,
+          "duration" : 10850
+        }
+      }, {
+        "uid" : "9f56920b214816ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707754618214,
+          "stop" : 1707754628833,
+          "duration" : 10619
+        }
+      }, {
+        "uid" : "944de75845cbb192",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707753298970,
+          "stop" : 1707753309923,
+          "duration" : 10953
+        }
+      }, {
+        "uid" : "3213fc03fa949b5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707753201287,
+          "stop" : 1707753212640,
+          "duration" : 11353
+        }
+      }, {
+        "uid" : "862ae8cd132275ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707752682933,
+          "stop" : 1707752692627,
+          "duration" : 9694
+        }
+      }, {
+        "uid" : "c27c29a12f962aa5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707751970776,
+          "stop" : 1707751981760,
+          "duration" : 10984
+        }
+      }, {
+        "uid" : "91ffa4da2ae8495d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707656586240,
+          "stop" : 1707656597565,
+          "duration" : 11325
+        }
+      }, {
+        "uid" : "501177fdff516eba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707656144358,
+          "stop" : 1707656154295,
+          "duration" : 9937
+        }
+      }, {
+        "uid" : "9615c96399bb5df7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <form class=\"oxd-form\" novalidate=\"\" data-v-d5bfe35b=\"\" data-v-8c6e0396=\"\">...</form>\n  (Session info: headless chrome=112.0.5615.165)",
+        "time" : {
+          "start" : 1707652700521,
+          "stop" : 1707652707877,
+          "duration" : 7356
+        }
+      }, {
+        "uid" : "b0c2bfd36d8cd8d7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <form class=\"oxd-form\" novalidate=\"\" data-v-d5bfe35b=\"\" data-v-8c6e0396=\"\">...</form>\n  (Session info: headless chrome=112.0.5615.165)",
+        "time" : {
+          "start" : 1707652088045,
+          "stop" : 1707652097331,
+          "duration" : 9286
+        }
+      }, {
+        "uid" : "b584bbc091d7a97b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707649702202,
+          "stop" : 1707649709589,
+          "duration" : 7387
+        }
+      }, {
+        "uid" : "76a70b4065a3b677",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <div class=\"oxd-form-loader\" data-v-d5bfe35b=\"\">...</div>\n  (Session info: headless chrome=112.0.5615.165)",
+        "time" : {
+          "start" : 1707648002296,
+          "stop" : 1707648011457,
+          "duration" : 9161
+        }
+      }, {
+        "uid" : "f53f99f74a365cca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707575566907,
+          "stop" : 1707575576595,
+          "duration" : 9688
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "5e169d903801df6b.json",
+  "parameterValues" : [ ]
+}
