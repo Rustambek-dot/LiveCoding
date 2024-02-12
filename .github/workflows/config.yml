@@ -1,11 +1,23 @@
 name: UI Tests
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+      inputs:
+        deployment_target:
+          description: Choose target
+          required: true
+          default: good
+          type: choice
+          options:
+            - good
+            - bad
 
 jobs:
   ui-tests:
     runs-on: ubuntu-latest
-
+    outputs:
+      good: ${{ steps.good.outcome }}
+      bad: ${{ steps.bad.outcome }}
     steps:
       - uses: actions/checkout@v2
 
