@@ -26,6 +26,8 @@ jobs:
         with:
             ref: gh-pages
             path: ./.github/gh-pages
+      - name: install dependencies
+        run: pip install -r requirements.txt
       - name: good
         id: good
         if: "github.event.inputs.deployment_target == 'good'"
