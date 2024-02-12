@@ -4,13 +4,13 @@
     "name" : "Profile Functionality",
     "children" : [ {
       "name" : "Change profile name",
-      "uid" : "9f56920b214816ed",
+      "uid" : "bc70b7d258d51bb6",
       "parentUid" : "bfe6fb5a25b9d3632e34c1e8a59f2830",
       "status" : "passed",
       "time" : {
-        "start" : 1707754618214,
-        "stop" : 1707754628833,
-        "duration" : 10619
+        "start" : 1707754694446,
+        "stop" : 1707754705296,
+        "duration" : 10850
       },
       "flaky" : false,
       "newFailed" : false,
@@ -19,12 +19,12 @@
     "uid" : "bfe6fb5a25b9d3632e34c1e8a59f2830"
   }, {
     "name" : "test_two",
-    "uid" : "e2618079478a8d96",
+    "uid" : "735450b12dfdc0c6",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1707754628919,
-      "stop" : 1707754628919,
+      "start" : 1707754705382,
+      "stop" : 1707754705382,
       "duration" : 0
     },
     "flaky" : false,

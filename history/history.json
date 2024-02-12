@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 12
+      "total" : 13
     },
     "items" : [ {
+      "uid" : "bc70b7d258d51bb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707754694446,
+        "stop" : 1707754705296,
+        "duration" : 10850
+      }
+    }, {
       "uid" : "9f56920b214816ed",
       "status" : "passed",
       "time" : {
@@ -112,13 +120,22 @@
   "eb29e781edfc4a5bcf2cec1d890164ec" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "735450b12dfdc0c6",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+      "time" : {
+        "start" : 1707754705382,
+        "stop" : 1707754705382,
+        "duration" : 0
+      }
+    }, {
       "uid" : "e2618079478a8d96",
       "status" : "broken",
       "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'driver'",
