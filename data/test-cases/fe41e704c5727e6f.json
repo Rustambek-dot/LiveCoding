@@ -1,5 +1,5 @@
 {
-  "uid" : "280de8560b4b3a65",
+  "uid" : "fe41e704c5727e6f",
   "name" : "test_two",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_two",
   "historyId" : "0e8b9fd43ab9db5cd07116323b9d06f6",
@@ -26,8 +26,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "setup",
     "time" : {
@@ -41,8 +41,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "afterStages" : [ {
     "name" : "driver::0",
@@ -57,8 +57,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "feature",
@@ -108,14 +108,23 @@
     } ],
     "history" : {
       "statistic" : {
-        "failed" : 4,
+        "failed" : 5,
         "broken" : 0,
         "skipped" : 0,
         "passed" : 2,
         "unknown" : 0,
-        "total" : 6
+        "total" : 7
       },
       "items" : [ {
+        "uid" : "280de8560b4b3a65",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False",
+        "time" : {
+          "start" : 1707755744645,
+          "stop" : 1707755744646,
+          "duration" : 1
+        }
+      }, {
         "uid" : "596e952d0956b45a",
         "status" : "failed",
         "statusDetails" : "AssertionError: assert False",
@@ -162,6 +171,6 @@
     },
     "tags" : [ "bad" ]
   },
-  "source" : "280de8560b4b3a65.json",
+  "source" : "fe41e704c5727e6f.json",
   "parameterValues" : [ ]
 }

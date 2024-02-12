@@ -1,36 +1,23 @@
 {
-  "uid" : "5e169d903801df6b",
+  "uid" : "358ae81c10330393",
   "name" : "Change profile name",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_change_profile_name",
   "historyId" : "42b4a115007c35c622675a0baedb491a",
   "time" : {
-    "start" : 1707756385022,
-    "stop" : 1707756395624,
-    "duration" : 10602
+    "start" : 1707756702712,
+    "stop" : 1707756715258,
+    "duration" : 12546
   },
-  "status" : "passed",
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fc8897bc620>\n\n    @allure.title(\"Change profile name\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    def test_change_profile_name(self):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n    \n>       self.dashboard_page.is_opened()\n\ntests/feature_profile_test.py:17: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_page.py:19: in is_opened\n    self.wait.until(EC.url_to_be(self.PAGE_URL))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"b6c5577a52805e7741b86a47b5cae65d\")>\nmethod = <function url_to_be.<locals>._predicate at 0x7fc888f51300>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver",
-    "time" : {
-      "start" : 1707756384270,
-      "stop" : 1707756385022,
-      "duration" : 752
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
     "name" : "setup",
     "time" : {
-      "start" : 1707756385022,
-      "stop" : 1707756385022,
+      "start" : 1707756702711,
+      "stop" : 1707756702711,
       "duration" : 0
     },
     "status" : "passed",
@@ -39,17 +26,34 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707756701964,
+      "stop" : 1707756702711,
+      "duration" : 747
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
-    "status" : "passed",
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fc8897bc620>\n\n    @allure.title(\"Change profile name\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    def test_change_profile_name(self):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n    \n>       self.dashboard_page.is_opened()\n\ntests/feature_profile_test.py:17: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_page.py:19: in is_opened\n    self.wait.until(EC.url_to_be(self.PAGE_URL))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"b6c5577a52805e7741b86a47b5cae65d\")>\nmethod = <function url_to_be.<locals>._predicate at 0x7fc888f51300>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
     "steps" : [ {
       "name" : "Open https://opensource-demo.orangehrmlive.com/web/index.php/auth/login page",
       "time" : {
-        "start" : 1707756385022,
-        "stop" : 1707756387094,
-        "duration" : 2072
+        "start" : 1707756702712,
+        "stop" : 1707756704109,
+        "duration" : 1397
       },
       "status" : "passed",
       "steps" : [ ],
@@ -57,14 +61,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1707756387094,
-        "stop" : 1707756388150,
-        "duration" : 1056
+        "start" : 1707756704109,
+        "stop" : 1707756705164,
+        "duration" : 1055
       },
       "status" : "passed",
       "steps" : [ ],
@@ -75,14 +79,14 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1707756388150,
-        "stop" : 1707756388219,
-        "duration" : 69
+        "start" : 1707756705164,
+        "stop" : 1707756705232,
+        "duration" : 68
       },
       "status" : "passed",
       "steps" : [ ],
@@ -93,133 +97,39 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
-    }, {
-      "name" : "Click submit button",
-      "time" : {
-        "start" : 1707756388219,
-        "stop" : 1707756388261,
-        "duration" : 42
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     }, {
       "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index is opened",
       "time" : {
-        "start" : 1707756388261,
-        "stop" : 1707756389250,
-        "duration" : 989
+        "start" : 1707756705232,
+        "stop" : 1707756715257,
+        "duration" : 10025
       },
-      "status" : "passed",
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/workspace/base/base_page.py\", line 19, in is_opened\n    self.wait.until(EC.url_to_be(self.PAGE_URL))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Click on 'My Info' link",
-      "time" : {
-        "start" : 1707756389251,
-        "stop" : 1707756391090,
-        "duration" : 1839
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7 is opened",
-      "time" : {
-        "start" : 1707756391090,
-        "stop" : 1707756391092,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Change name on 'Test 62'",
-      "time" : {
-        "start" : 1707756391092,
-        "stop" : 1707756392182,
-        "duration" : 1090
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Save changes",
-      "time" : {
-        "start" : 1707756392182,
-        "stop" : 1707756392390,
-        "duration" : 208
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "Changes has been saved successfuly",
-      "time" : {
-        "start" : 1707756392391,
-        "stop" : 1707756395456,
-        "duration" : 3065
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
     } ],
-    "attachments" : [ {
-      "uid" : "2afd8d11af9becd6",
-      "name" : "Success",
-      "source" : "2afd8d11af9becd6.png",
-      "type" : "image/png",
-      "size" : 166126
-    } ],
+    "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 10
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1707756395624,
-      "stop" : 1707756395708,
-      "duration" : 84
+      "start" : 1707756715285,
+      "stop" : 1707756715371,
+      "duration" : 86
     },
     "status" : "passed",
     "steps" : [ ],
@@ -227,8 +137,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "severity",
@@ -250,7 +160,7 @@
     "value" : "TestProfileFeature"
   }, {
     "name" : "host",
-    "value" : "2202bbfb9fea"
+    "value" : "936106e06b4e"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -274,17 +184,29 @@
   "extra" : {
     "severity" : "critical",
     "retries" : [ ],
-    "categories" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 5,
+        "broken" : 6,
         "skipped" : 0,
         "passed" : 13,
         "unknown" : 0,
-        "total" : 18
+        "total" : 19
       },
       "items" : [ {
+        "uid" : "5e169d903801df6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707756385022,
+          "stop" : 1707756395624,
+          "duration" : 10602
+        }
+      }, {
         "uid" : "bfd71b901b79971c",
         "status" : "broken",
         "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -429,6 +351,6 @@
     },
     "tags" : [ "smoke" ]
   },
-  "source" : "5e169d903801df6b.json",
+  "source" : "358ae81c10330393.json",
   "parameterValues" : [ ]
 }
