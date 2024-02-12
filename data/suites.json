@@ -8,7 +8,7 @@
         "name" : "TestProfileFeature",
         "children" : [ {
           "name" : "test_two",
-          "uid" : "fe41e704c5727e6f",
+          "uid" : "1e5e52a028ea3821",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "failed",
           "time" : {
@@ -21,13 +21,13 @@
           "parameters" : [ ]
         }, {
           "name" : "Change profile name",
-          "uid" : "358ae81c10330393",
+          "uid" : "8bda90f367149691",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
-          "status" : "broken",
+          "status" : "passed",
           "time" : {
-            "start" : 1707756702712,
-            "stop" : 1707756715258,
-            "duration" : 12546
+            "start" : 1707770301759,
+            "stop" : 1707770311912,
+            "duration" : 10153
           },
           "flaky" : false,
           "newFailed" : false,
@@ -38,6 +38,23 @@
       "uid" : "25227cccd8d449703da24a13b6a34b9f"
     } ],
     "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  }, {
+    "name" : "test_me",
+    "children" : [ {
+      "name" : "test_two",
+      "uid" : "5e9aa72011d2fd32",
+      "parentUid" : "0bb387fc5de54c297ee18f2199c962b0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1707770300241,
+        "stop" : 1707770300241,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0bb387fc5de54c297ee18f2199c962b0"
   } ],
   "name" : "suites"
 }

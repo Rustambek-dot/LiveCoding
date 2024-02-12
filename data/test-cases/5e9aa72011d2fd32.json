@@ -1,0 +1,85 @@
+{
+  "uid" : "5e9aa72011d2fd32",
+  "name" : "test_two",
+  "fullName" : "test_me#test_two",
+  "historyId" : "d02895b4585abb18a0a4623dd88c2ff6",
+  "time" : {
+    "start" : 1707770300241,
+    "stop" : 1707770300241,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+  "statusTrace" : "request = <SubRequest 'driver' for <Function test_two>>\n\n    @pytest.fixture(scope=\"function\", autouse=True)\n    def driver(request):\n        options = Options()\n        options.add_argument(\"--headless\")\n        options.add_argument(\"--no-sandbox\")\n        options.add_argument(\"--disable-dev-shm-usage\")\n        options.add_argument(\"--window-size=1920,1080\")\n        driver = webdriver.Chrome(options=options)\n>       request.cls.driver = driver\nE       AttributeError: 'NoneType' object has no attribute 'driver'\n\nconftest.py:14: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1707770300242,
+      "stop" : 1707770300994,
+      "duration" : 752
+    },
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'driver'\n",
+    "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 80, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1123, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 895, in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n  File \"/usr/workspace/conftest.py\", line 14, in driver\n    request.cls.driver = driver\n    ^^^^^^^^^^^^^^^^^^\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "bad"
+  }, {
+    "name" : "suite",
+    "value" : "test_me"
+  }, {
+    "name" : "host",
+    "value" : "925d633de291"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_me"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ca710dde324f682a",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+      "time" : {
+        "start" : 1707770257650,
+        "stop" : 1707770257650,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "bad" ]
+  },
+  "source" : "5e9aa72011d2fd32.json",
+  "parameterValues" : [ ]
+}

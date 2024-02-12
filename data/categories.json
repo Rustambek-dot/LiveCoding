@@ -6,7 +6,7 @@
       "name" : "AssertionError: assert False",
       "children" : [ {
         "name" : "test_two",
-        "uid" : "fe41e704c5727e6f",
+        "uid" : "1e5e52a028ea3821",
         "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
         "status" : "failed",
         "time" : {
@@ -24,22 +24,22 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "name" : "AttributeError: 'NoneType' object has no attribute 'driver'",
       "children" : [ {
-        "name" : "Change profile name",
-        "uid" : "358ae81c10330393",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "name" : "test_two",
+        "uid" : "5e9aa72011d2fd32",
+        "parentUid" : "ec81201e24be6b7d198ca42d492e711a",
         "status" : "broken",
         "time" : {
-          "start" : 1707756702712,
-          "stop" : 1707756715258,
-          "duration" : 12546
+          "start" : 1707770300241,
+          "stop" : 1707770300241,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+      "uid" : "ec81201e24be6b7d198ca42d492e711a"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

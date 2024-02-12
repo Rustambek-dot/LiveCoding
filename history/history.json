@@ -1,14 +1,23 @@
 {
   "0e8b9fd43ab9db5cd07116323b9d06f6" : {
     "statistic" : {
-      "failed" : 5,
+      "failed" : 6,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "1e5e52a028ea3821",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1707755744645,
+        "stop" : 1707755744646,
+        "duration" : 1
+      }
+    }, {
       "uid" : "fe41e704c5727e6f",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
@@ -76,11 +85,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 19
+      "total" : 20
     },
     "items" : [ {
+      "uid" : "8bda90f367149691",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707770301759,
+        "stop" : 1707770311912,
+        "duration" : 10153
+      }
+    }, {
       "uid" : "358ae81c10330393",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -237,6 +254,26 @@
         "start" : 1707575566907,
         "stop" : 1707575576595,
         "duration" : 9688
+      }
+    } ]
+  },
+  "d02895b4585abb18a0a4623dd88c2ff6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e9aa72011d2fd32",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+      "time" : {
+        "start" : 1707770300241,
+        "stop" : 1707770300241,
+        "duration" : 0
       }
     } ]
   },
