@@ -8,13 +8,13 @@
         "name" : "TestProfileFeature",
         "children" : [ {
           "name" : "Change profile name",
-          "uid" : "944de75845cbb192",
+          "uid" : "9f56920b214816ed",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "passed",
           "time" : {
-            "start" : 1707753298970,
-            "stop" : 1707753309923,
-            "duration" : 10953
+            "start" : 1707754618214,
+            "stop" : 1707754628833,
+            "duration" : 10619
           },
           "flaky" : false,
           "newFailed" : false,
@@ -23,12 +23,12 @@
         "uid" : "ecec602510fca8558358a9e53be22b2c"
       }, {
         "name" : "test_two",
-        "uid" : "bd88f6a480dc1bca",
+        "uid" : "e2618079478a8d96",
         "parentUid" : "25227cccd8d449703da24a13b6a34b9f",
         "status" : "broken",
         "time" : {
-          "start" : 1707753310009,
-          "stop" : 1707753310009,
+          "start" : 1707754628919,
+          "stop" : 1707754628919,
           "duration" : 0
         },
         "flaky" : false,
