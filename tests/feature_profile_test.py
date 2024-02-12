@@ -24,4 +24,4 @@ class TestProfileFeature(BaseTest):
 
     @pytest.mark.bad
     def test_two(self):
-        return 1 == 2
+        assert False

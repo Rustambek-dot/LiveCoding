@@ -30,4 +30,4 @@ class PersonalPage(BasePage):
     def is_changes_saved(self):
         self.wait.until(EC.invisibility_of_element_located(self.SPINNER))
         self.wait.until(EC.visibility_of_element_located(self.FIRST_NAME_FIELD))
-        self.wait.until(EC.text_to_be_present_in_element_value(self.FIRST_NAME_FIELD, 2))
+        self.wait.until(EC.text_to_be_present_in_element_value(self.FIRST_NAME_FIELD, self.name))
