@@ -22,6 +22,6 @@ class TestProfileFeature(BaseTest):
         self.personal_page.is_changes_saved()
         self.personal_page.make_screenshot("Success")
 
-@pytest.mark.bad
-def test_two():
-    assert 1 == 2
+    @pytest.mark.bad
+    def test_two(self):
+        return 1 == 2
