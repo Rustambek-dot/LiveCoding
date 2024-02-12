@@ -1,5 +1,5 @@
 {
-  "total" : 2,
+  "total" : 1,
   "items" : [ {
     "uid" : "bfe6fb5a25b9d3632e34c1e8a59f2830",
     "name" : "Profile Functionality",
@@ -7,9 +7,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   } ]
 }
