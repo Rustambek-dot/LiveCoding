@@ -1,11 +1,11 @@
 {
-  "uid" : "a649923932f3e19a",
+  "uid" : "974ba368649ad915",
   "name" : "test_two",
   "fullName" : "tests.feature_profile_test#test_two",
   "historyId" : "eb29e781edfc4a5bcf2cec1d890164ec",
   "time" : {
-    "start" : 1707752692714,
-    "stop" : 1707752692714,
+    "start" : 1707753212728,
+    "stop" : 1707753212728,
     "duration" : 0
   },
   "status" : "broken",
@@ -16,8 +16,8 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1707752692714,
-      "stop" : 1707752693451,
+      "start" : 1707753212729,
+      "stop" : 1707753213466,
       "duration" : 737
     },
     "status" : "broken",
@@ -43,7 +43,7 @@
     "value" : "feature_profile_test"
   }, {
     "name" : "host",
-    "value" : "49257a9ca73c"
+    "value" : "374d8b8c2031"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -75,13 +75,22 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 2,
+        "broken" : 3,
         "skipped" : 0,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
+        "uid" : "a649923932f3e19a",
+        "status" : "broken",
+        "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+        "time" : {
+          "start" : 1707752692714,
+          "stop" : 1707752692714,
+          "duration" : 0
+        }
+      }, {
         "uid" : "dc9be5ea7a9300d7",
         "status" : "broken",
         "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'driver'",
@@ -94,6 +103,6 @@
     },
     "tags" : [ "bad" ]
   },
-  "source" : "a649923932f3e19a.json",
+  "source" : "974ba368649ad915.json",
   "parameterValues" : [ ]
 }
