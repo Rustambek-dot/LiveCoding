@@ -1,24 +1,24 @@
 {
-  "uid" : "e6893ee1651f619e",
+  "uid" : "596e952d0956b45a",
   "name" : "test_two",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_two",
   "historyId" : "0e8b9fd43ab9db5cd07116323b9d06f6",
   "time" : {
-    "start" : 1707756017576,
-    "stop" : 1707756017576,
-    "duration" : 0
+    "start" : 1707755744645,
+    "stop" : 1707755744646,
+    "duration" : 1
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert False",
-  "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7f713796e4e0>\n\n    @pytest.mark.bad\n    def test_two(self):\n>       assert False\nE       assert False\n\ntests/feature_profile_test.py:27: AssertionError",
+  "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x00000229C94A5E50>\n\n    @pytest.mark.bad\n    def test_two(self):\n>       assert False\nE       assert False\n\ntests\\feature_profile_test.py:27: AssertionError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1707756016837,
-      "stop" : 1707756017575,
-      "duration" : 738
+      "start" : 1707755743512,
+      "stop" : 1707755744643,
+      "duration" : 1131
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,8 +31,8 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1707756017575,
-      "stop" : 1707756017575,
+      "start" : 1707755744643,
+      "stop" : 1707755744643,
       "duration" : 0
     },
     "status" : "passed",
@@ -47,9 +47,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1707756017578,
-      "stop" : 1707756017632,
-      "duration" : 54
+      "start" : 1707755744756,
+      "stop" : 1707755746809,
+      "duration" : 2053
     },
     "status" : "passed",
     "steps" : [ ],
@@ -77,10 +77,10 @@
     "value" : "TestProfileFeature"
   }, {
     "name" : "host",
-    "value" : "d3586dbadab3"
+    "value" : "DESKTOP"
   }, {
     "name" : "thread",
-    "value" : "1-MainThread"
+    "value" : "21532-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -100,16 +100,7 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ {
-      "uid" : "1dd5168b87e53b49",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert False",
-      "time" : {
-        "start" : 1707755744645,
-        "stop" : 1707755744646,
-        "duration" : 1
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ {
       "name" : "Product defects",
       "matchedStatuses" : [ ],
@@ -117,14 +108,23 @@
     } ],
     "history" : {
       "statistic" : {
-        "failed" : 2,
+        "failed" : 3,
         "broken" : 0,
         "skipped" : 0,
         "passed" : 2,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "e6893ee1651f619e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False",
+        "time" : {
+          "start" : 1707756017576,
+          "stop" : 1707756017576,
+          "duration" : 0
+        }
+      }, {
         "uid" : "9302a6e53cd186fe",
         "status" : "failed",
         "statusDetails" : "AssertionError: assert False",
@@ -153,6 +153,6 @@
     },
     "tags" : [ "bad" ]
   },
-  "source" : "e6893ee1651f619e.json",
+  "source" : "596e952d0956b45a.json",
   "parameterValues" : [ ]
 }

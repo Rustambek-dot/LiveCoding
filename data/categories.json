@@ -1,39 +1,18 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
-      "children" : [ {
-        "name" : "Change profile name",
-        "uid" : "bfd71b901b79971c",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1707755995591,
-          "stop" : 1707756016721,
-          "duration" : 21130
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError: assert False",
       "children" : [ {
         "name" : "test_two",
-        "uid" : "e6893ee1651f619e",
+        "uid" : "596e952d0956b45a",
         "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
         "status" : "failed",
         "time" : {
-          "start" : 1707756017576,
-          "stop" : 1707756017576,
-          "duration" : 0
+          "start" : 1707755744645,
+          "stop" : 1707755744646,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
