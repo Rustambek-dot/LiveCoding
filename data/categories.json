@@ -1,26 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\" data-v-10d463b7=\"\" data-v-8c6e0396=\"\">...</button> is not clickable at point (1789, 709). Other element would receive the click: <form class=\"oxd-form\" novalidate=\"\" data-v-d5bfe35b=\"\" data-v-8c6e0396=\"\">...</form>\n  (Session info: headless chrome=112.0.5615.165)",
+      "name" : "AssertionError: assert False",
       "children" : [ {
-        "name" : "Change profile name",
-        "uid" : "6b56e52358be0376",
-        "parentUid" : "d806c533785086e9c00046cd5f5723e5",
-        "status" : "broken",
+        "name" : "test_two",
+        "uid" : "9302a6e53cd186fe",
+        "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
+        "status" : "failed",
         "time" : {
-          "start" : 1707755111616,
-          "stop" : 1707755120255,
-          "duration" : 8639
+          "start" : 1707755470275,
+          "stop" : 1707755470275,
+          "duration" : 0
         },
         "flaky" : false,
-        "newFailed" : false,
+        "newFailed" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "d806c533785086e9c00046cd5f5723e5"
+      "uid" : "8d89788b03808d3beec6ddf8e7d75f3d"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }

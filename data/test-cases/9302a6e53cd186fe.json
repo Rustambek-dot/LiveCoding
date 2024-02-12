@@ -1,62 +1,64 @@
 {
-  "uid" : "f477dba6126f82fe",
+  "uid" : "9302a6e53cd186fe",
   "name" : "test_two",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_two",
   "historyId" : "0e8b9fd43ab9db5cd07116323b9d06f6",
   "time" : {
-    "start" : 1707755121137,
-    "stop" : 1707755121137,
+    "start" : 1707755470275,
+    "stop" : 1707755470275,
     "duration" : 0
   },
-  "status" : "passed",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fa3e0ccc140>\n\n    @pytest.mark.bad\n    def test_two(self):\n>       assert False\nE       assert False\n\ntests/feature_profile_test.py:27: AssertionError",
   "flaky" : false,
-  "newFailed" : false,
+  "newFailed" : true,
   "beforeStages" : [ {
-    "name" : "setup",
-    "time" : {
-      "start" : 1707755121137,
-      "stop" : 1707755121137,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : false,
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  }, {
     "name" : "driver",
     "time" : {
-      "start" : 1707755120392,
-      "stop" : 1707755121137,
-      "duration" : 745
+      "start" : 1707755469540,
+      "stop" : 1707755470274,
+      "duration" : 734
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : false,
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1707755470274,
+      "stop" : 1707755470275,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1707755121138,
-      "stop" : 1707755121192,
+      "start" : 1707755470299,
+      "stop" : 1707755470353,
       "duration" : 54
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : false,
-    "stepsCount" : 0,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "feature",
@@ -75,7 +77,7 @@
     "value" : "TestProfileFeature"
   }, {
     "name" : "host",
-    "value" : "d492805d1982"
+    "value" : "bdad4634db5a"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -99,17 +101,29 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "history" : {
       "statistic" : {
-        "failed" : 0,
+        "failed" : 1,
         "broken" : 0,
         "skipped" : 0,
         "passed" : 2,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
+        "uid" : "f477dba6126f82fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707755121137,
+          "stop" : 1707755121137,
+          "duration" : 0
+        }
+      }, {
         "uid" : "995be065cb1598cd",
         "status" : "passed",
         "time" : {
@@ -121,6 +135,6 @@
     },
     "tags" : [ "bad" ]
   },
-  "source" : "f477dba6126f82fe.json",
+  "source" : "9302a6e53cd186fe.json",
   "parameterValues" : [ ]
 }
