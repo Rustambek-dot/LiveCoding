@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Mon Feb 12 16:31:10 GMT 2024","Mon Feb 12 16:31:10 GMT 2024","0","tests","feature_profile_test","TestProfileFeature","","","test_two",""
-"passed","Mon Feb 12 16:30:59 GMT 2024","Mon Feb 12 16:31:09 GMT 2024","10337","tests","feature_profile_test","TestProfileFeature","","","Change profile name",""
+"failed","Mon Feb 12 16:40:17 GMT 2024","Mon Feb 12 16:40:17 GMT 2024","0","tests","feature_profile_test","TestProfileFeature","","","test_two",""
+"broken","Mon Feb 12 16:39:55 GMT 2024","Mon Feb 12 16:40:16 GMT 2024","21130","tests","feature_profile_test","TestProfileFeature","","","Change profile name",""
