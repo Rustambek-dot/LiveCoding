@@ -4,25 +4,25 @@
     "name" : "tests.feature_profile_test",
     "children" : [ {
       "name" : "Change profile name",
-      "uid" : "c27c29a12f962aa5",
+      "uid" : "862ae8cd132275ea",
       "parentUid" : "06879556d81935b42ec1b990728e6479",
       "status" : "passed",
       "time" : {
-        "start" : 1707751970776,
-        "stop" : 1707751981760,
-        "duration" : 10984
+        "start" : 1707752682933,
+        "stop" : 1707752692627,
+        "duration" : 9694
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_two",
-      "uid" : "dc9be5ea7a9300d7",
+      "uid" : "a649923932f3e19a",
       "parentUid" : "06879556d81935b42ec1b990728e6479",
       "status" : "broken",
       "time" : {
-        "start" : 1707751981846,
-        "stop" : 1707751981846,
+        "start" : 1707752692714,
+        "stop" : 1707752692714,
         "duration" : 0
       },
       "flaky" : false,
