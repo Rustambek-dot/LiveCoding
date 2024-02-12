@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+      "children" : [ {
+        "name" : "test_two",
+        "uid" : "dc9be5ea7a9300d7",
+        "parentUid" : "ec81201e24be6b7d198ca42d492e711a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707751981846,
+          "stop" : 1707751981846,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec81201e24be6b7d198ca42d492e711a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

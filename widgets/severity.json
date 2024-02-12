@@ -1,11 +1,21 @@
 [ {
-  "uid" : "91ffa4da2ae8495d",
+  "uid" : "c27c29a12f962aa5",
   "name" : "Change profile name",
   "time" : {
-    "start" : 1707656586240,
-    "stop" : 1707656597565,
-    "duration" : 11325
+    "start" : 1707751970776,
+    "stop" : 1707751981760,
+    "duration" : 10984
   },
   "status" : "passed",
   "severity" : "critical"
+}, {
+  "uid" : "dc9be5ea7a9300d7",
+  "name" : "test_two",
+  "time" : {
+    "start" : 1707751981846,
+    "stop" : 1707751981846,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
 } ]
