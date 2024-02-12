@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+@pytest.mark.good
 @pytest.fixture(scope="function", autouse=True)
 def driver(request):
     options = Options()
@@ -13,3 +14,7 @@ def driver(request):
     request.cls.driver = driver
     yield driver
     driver.quit()
+
+    @pytest.mark.bad
+    def test_two():
+        assert False
