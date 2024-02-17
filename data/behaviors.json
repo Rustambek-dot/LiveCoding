@@ -4,7 +4,7 @@
     "name" : "Profile Functionality",
     "children" : [ {
       "name" : "test_two",
-      "uid" : "765aace6d9ca4fd8",
+      "uid" : "46655a3fd52ce05e",
       "parentUid" : "bfe6fb5a25b9d3632e34c1e8a59f2830",
       "status" : "failed",
       "time" : {
@@ -17,32 +17,19 @@
       "parameters" : [ ]
     }, {
       "name" : "Change profile name",
-      "uid" : "fad06d691c1eb11e",
+      "uid" : "cb97e52aead526f4",
       "parentUid" : "bfe6fb5a25b9d3632e34c1e8a59f2830",
-      "status" : "failed",
+      "status" : "broken",
       "time" : {
-        "start" : 1708177888889,
-        "stop" : 1708177898930,
-        "duration" : 10041
+        "start" : 1708179909607,
+        "stop" : 1708179909607,
+        "duration" : 0
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "bfe6fb5a25b9d3632e34c1e8a59f2830"
-  }, {
-    "name" : "test_two",
-    "uid" : "941c0fc18f5bfaf7",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1708177887366,
-      "stop" : 1708177887366,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
   } ],
   "name" : "behaviors"
 }

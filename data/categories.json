@@ -6,26 +6,13 @@
       "name" : "AssertionError: assert False",
       "children" : [ {
         "name" : "test_two",
-        "uid" : "765aace6d9ca4fd8",
+        "uid" : "46655a3fd52ce05e",
         "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
         "status" : "failed",
         "time" : {
           "start" : 1707755744645,
           "stop" : 1707755744646,
           "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Change profile name",
-        "uid" : "fad06d691c1eb11e",
-        "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1708177888889,
-          "stop" : 1708177898930,
-          "duration" : 10041
         },
         "flaky" : false,
         "newFailed" : false,
@@ -37,22 +24,22 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "AttributeError: 'NoneType' object has no attribute 'driver'",
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/lib/chromium/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
       "children" : [ {
-        "name" : "test_two",
-        "uid" : "941c0fc18f5bfaf7",
-        "parentUid" : "ec81201e24be6b7d198ca42d492e711a",
+        "name" : "Change profile name",
+        "uid" : "cb97e52aead526f4",
+        "parentUid" : "dd609d417114094a9d1f6e41079e7b60",
         "status" : "broken",
         "time" : {
-          "start" : 1708177887366,
-          "stop" : 1708177887366,
+          "start" : 1708179909607,
+          "stop" : 1708179909607,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ec81201e24be6b7d198ca42d492e711a"
+      "uid" : "dd609d417114094a9d1f6e41079e7b60"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
