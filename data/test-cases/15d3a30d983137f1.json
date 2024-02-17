@@ -1,5 +1,5 @@
 {
-  "uid" : "49ed6f58c918918a",
+  "uid" : "15d3a30d983137f1",
   "name" : "Change profile name",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_change_profile_name",
   "historyId" : "42b4a115007c35c622675a0baedb491a",
@@ -202,9 +202,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "580a9f423e7e82ef",
+      "uid" : "3a83aaee9f0eadb7",
       "name" : "Success",
-      "source" : "580a9f423e7e82ef.png",
+      "source" : "3a83aaee9f0eadb7.png",
       "type" : "image/png",
       "size" : 168905
     } ],
@@ -278,6 +278,6 @@
     "categories" : [ ],
     "tags" : [ "smoke", "good" ]
   },
-  "source" : "49ed6f58c918918a.json",
+  "source" : "15d3a30d983137f1.json",
   "parameterValues" : [ ]
 }

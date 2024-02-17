@@ -8,7 +8,7 @@
         "name" : "TestProfileFeature",
         "children" : [ {
           "name" : "test_two",
-          "uid" : "46655a3fd52ce05e",
+          "uid" : "ffc1dba167aa25cc",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "failed",
           "time" : {
@@ -21,12 +21,12 @@
           "parameters" : [ ]
         }, {
           "name" : "Change profile name",
-          "uid" : "cb97e52aead526f4",
+          "uid" : "db5c331899a2f771",
           "parentUid" : "ecec602510fca8558358a9e53be22b2c",
           "status" : "broken",
           "time" : {
-            "start" : 1708179909607,
-            "stop" : 1708179909607,
+            "start" : 1708180200895,
+            "stop" : 1708180200895,
             "duration" : 0
           },
           "flaky" : false,
