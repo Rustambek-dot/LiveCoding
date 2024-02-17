@@ -4,10 +4,10 @@ import pytest
 from base.base_test import BaseTest
 
 
-@pytest.mark.good
+
 @allure.feature("Profile Functionality")
 class TestProfileFeature(BaseTest):
-    @pytest.mark.good
+
     @allure.title("Change profile name")
     @allure.severity("Critical")
     @pytest.mark.smoke
