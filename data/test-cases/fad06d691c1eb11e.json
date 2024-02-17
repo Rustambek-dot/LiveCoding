@@ -1,23 +1,23 @@
 {
-  "uid" : "4c7d72e6c1d04ab5",
+  "uid" : "fad06d691c1eb11e",
   "name" : "Change profile name",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_change_profile_name",
   "historyId" : "42b4a115007c35c622675a0baedb491a",
   "time" : {
-    "start" : 1707770594582,
-    "stop" : 1707770605797,
-    "duration" : 11215
+    "start" : 1708177888889,
+    "stop" : 1708177898930,
+    "duration" : 10041
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert False",
-  "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fe2acf65ca0>\n\n    @pytest.mark.good\n    @allure.title(\"Change profile name\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    def test_change_profile_name(self):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.dashboard_page.is_opened()\n        self.dashboard_page.click_my_info_link()\n        self.personal_page.is_opened()\n        self.personal_page.change_name(f\"Test {random.randint(1, 100)}\")\n        self.personal_page.save_changes()\n        self.personal_page.is_changes_saved()\n        self.personal_page.make_screenshot(\"Success\")\n>       assert False\nE       assert False\n\ntests/feature_profile_test.py:26: AssertionError",
+  "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fe7e64bb980>\n\n    @pytest.mark.good\n    @allure.title(\"Change profile name\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    def test_change_profile_name(self):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.dashboard_page.is_opened()\n        self.dashboard_page.click_my_info_link()\n        self.personal_page.is_opened()\n        self.personal_page.change_name(f\"Test {random.randint(1, 100)}\")\n        self.personal_page.save_changes()\n        self.personal_page.is_changes_saved()\n        self.personal_page.make_screenshot(\"Success\")\n>       assert False\nE       assert False\n\ntests/feature_profile_test.py:26: AssertionError",
   "flaky" : false,
-  "newFailed" : true,
+  "newFailed" : false,
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1707770594581,
-      "stop" : 1707770594581,
+      "start" : 1708177888889,
+      "stop" : 1708177888889,
       "duration" : 0
     },
     "status" : "passed",
@@ -31,9 +31,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1707770593849,
-      "stop" : 1707770594581,
-      "duration" : 732
+      "start" : 1708177888149,
+      "stop" : 1708177888889,
+      "duration" : 740
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,13 +47,13 @@
   "testStage" : {
     "status" : "failed",
     "statusMessage" : "AssertionError: assert False",
-    "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fe2acf65ca0>\n\n    @pytest.mark.good\n    @allure.title(\"Change profile name\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    def test_change_profile_name(self):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.dashboard_page.is_opened()\n        self.dashboard_page.click_my_info_link()\n        self.personal_page.is_opened()\n        self.personal_page.change_name(f\"Test {random.randint(1, 100)}\")\n        self.personal_page.save_changes()\n        self.personal_page.is_changes_saved()\n        self.personal_page.make_screenshot(\"Success\")\n>       assert False\nE       assert False\n\ntests/feature_profile_test.py:26: AssertionError",
+    "statusTrace" : "self = <feature_profile_test.TestProfileFeature object at 0x7fe7e64bb980>\n\n    @pytest.mark.good\n    @allure.title(\"Change profile name\")\n    @allure.severity(\"Critical\")\n    @pytest.mark.smoke\n    def test_change_profile_name(self):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.dashboard_page.is_opened()\n        self.dashboard_page.click_my_info_link()\n        self.personal_page.is_opened()\n        self.personal_page.change_name(f\"Test {random.randint(1, 100)}\")\n        self.personal_page.save_changes()\n        self.personal_page.is_changes_saved()\n        self.personal_page.make_screenshot(\"Success\")\n>       assert False\nE       assert False\n\ntests/feature_profile_test.py:26: AssertionError",
     "steps" : [ {
       "name" : "Open https://opensource-demo.orangehrmlive.com/web/index.php/auth/login page",
       "time" : {
-        "start" : 1707770594582,
-        "stop" : 1707770596737,
-        "duration" : 2155
+        "start" : 1708177888890,
+        "stop" : 1708177890478,
+        "duration" : 1588
       },
       "status" : "passed",
       "steps" : [ ],
@@ -66,9 +66,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1707770596738,
-        "stop" : 1707770597792,
-        "duration" : 1054
+        "start" : 1708177890478,
+        "stop" : 1708177891535,
+        "duration" : 1057
       },
       "status" : "passed",
       "steps" : [ ],
@@ -84,9 +84,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1707770597793,
-        "stop" : 1707770597861,
-        "duration" : 68
+        "start" : 1708177891536,
+        "stop" : 1708177891606,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -102,9 +102,9 @@
     }, {
       "name" : "Click submit button",
       "time" : {
-        "start" : 1707770597861,
-        "stop" : 1707770597903,
-        "duration" : 42
+        "start" : 1708177891606,
+        "stop" : 1708177891649,
+        "duration" : 43
       },
       "status" : "passed",
       "steps" : [ ],
@@ -117,9 +117,9 @@
     }, {
       "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index is opened",
       "time" : {
-        "start" : 1707770597903,
-        "stop" : 1707770598948,
-        "duration" : 1045
+        "start" : 1708177891650,
+        "stop" : 1708177892570,
+        "duration" : 920
       },
       "status" : "passed",
       "steps" : [ ],
@@ -132,9 +132,9 @@
     }, {
       "name" : "Click on 'My Info' link",
       "time" : {
-        "start" : 1707770598948,
-        "stop" : 1707770601220,
-        "duration" : 2272
+        "start" : 1708177892570,
+        "stop" : 1708177894440,
+        "duration" : 1870
       },
       "status" : "passed",
       "steps" : [ ],
@@ -147,9 +147,9 @@
     }, {
       "name" : "Page https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7 is opened",
       "time" : {
-        "start" : 1707770601221,
-        "stop" : 1707770601223,
-        "duration" : 2
+        "start" : 1708177894440,
+        "stop" : 1708177894443,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -160,11 +160,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Change name on 'Test 11'",
+      "name" : "Change name on 'Test 78'",
       "time" : {
-        "start" : 1707770601223,
-        "stop" : 1707770602318,
-        "duration" : 1095
+        "start" : 1708177894443,
+        "stop" : 1708177895551,
+        "duration" : 1108
       },
       "status" : "passed",
       "steps" : [ ],
@@ -177,9 +177,9 @@
     }, {
       "name" : "Save changes",
       "time" : {
-        "start" : 1707770602318,
-        "stop" : 1707770602562,
-        "duration" : 244
+        "start" : 1708177895551,
+        "stop" : 1708177895694,
+        "duration" : 143
       },
       "status" : "passed",
       "steps" : [ ],
@@ -192,9 +192,9 @@
     }, {
       "name" : "Changes has been saved successfuly",
       "time" : {
-        "start" : 1707770602562,
-        "stop" : 1707770605627,
-        "duration" : 3065
+        "start" : 1708177895694,
+        "stop" : 1708177898764,
+        "duration" : 3070
       },
       "status" : "passed",
       "steps" : [ ],
@@ -206,11 +206,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "3bafdc7267f436b7",
+      "uid" : "9dacdc7cb8e8063b",
       "name" : "Success",
-      "source" : "3bafdc7267f436b7.png",
+      "source" : "9dacdc7cb8e8063b.png",
       "type" : "image/png",
-      "size" : 170040
+      "size" : 168913
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -221,9 +221,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1707770605800,
-      "stop" : 1707770605857,
-      "duration" : 57
+      "start" : 1708177898933,
+      "stop" : 1708177898991,
+      "duration" : 58
     },
     "status" : "passed",
     "steps" : [ ],
@@ -257,7 +257,7 @@
     "value" : "TestProfileFeature"
   }, {
     "name" : "host",
-    "value" : "a8f385bcfa76"
+    "value" : "f644d3d20cce"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -281,7 +281,16 @@
   "extra" : {
     "severity" : "critical",
     "retries" : [ {
-      "uid" : "24a2ebab98739889",
+      "uid" : "148079afe82a0cec",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1708177849546,
+        "stop" : 1708177859524,
+        "duration" : 9978
+      }
+    }, {
+      "uid" : "af6b3ad2b5cb2441",
       "status" : "passed",
       "time" : {
         "start" : 1707769734895,
@@ -296,14 +305,23 @@
     } ],
     "history" : {
       "statistic" : {
-        "failed" : 1,
+        "failed" : 2,
         "broken" : 6,
         "skipped" : 0,
         "passed" : 14,
         "unknown" : 0,
-        "total" : 21
+        "total" : 22
       },
       "items" : [ {
+        "uid" : "4c7d72e6c1d04ab5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False",
+        "time" : {
+          "start" : 1707770594582,
+          "stop" : 1707770605797,
+          "duration" : 11215
+        }
+      }, {
         "uid" : "8bda90f367149691",
         "status" : "passed",
         "time" : {
@@ -461,18 +479,10 @@
           "stop" : 1707648011457,
           "duration" : 9161
         }
-      }, {
-        "uid" : "f53f99f74a365cca",
-        "status" : "passed",
-        "time" : {
-          "start" : 1707575566907,
-          "stop" : 1707575576595,
-          "duration" : 9688
-        }
       } ]
     },
     "tags" : [ "smoke", "good" ]
   },
-  "source" : "4c7d72e6c1d04ab5.json",
+  "source" : "fad06d691c1eb11e.json",
   "parameterValues" : [ ]
 }
