@@ -7,7 +7,7 @@ from base.base_test import BaseTest
 
 @allure.feature("Profile Functionality")
 class TestProfileFeature(BaseTest):
-
+    @pytest.mark.good
     @allure.title("Change profile name")
     @allure.severity("Critical")
     @pytest.mark.smoke
@@ -23,4 +23,9 @@ class TestProfileFeature(BaseTest):
         self.personal_page.save_changes()
         self.personal_page.is_changes_saved()
         self.personal_page.make_screenshot("Success")
+
+
+    @pytest.mark.bad
+    def test_bad(self):
+        assert 2 == 4
 
