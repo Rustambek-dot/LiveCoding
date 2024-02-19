@@ -1,5 +1,5 @@
 {
-  "uid" : "ca0c2440a6730f3e",
+  "uid" : "50692aecd4cbc6c6",
   "name" : "test_two",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_two",
   "historyId" : "0e8b9fd43ab9db5cd07116323b9d06f6",
@@ -108,14 +108,23 @@
     } ],
     "history" : {
       "statistic" : {
-        "failed" : 12,
+        "failed" : 13,
         "broken" : 0,
         "skipped" : 0,
         "passed" : 2,
         "unknown" : 0,
-        "total" : 14
+        "total" : 15
       },
       "items" : [ {
+        "uid" : "ca0c2440a6730f3e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False",
+        "time" : {
+          "start" : 1707755744645,
+          "stop" : 1707755744646,
+          "duration" : 1
+        }
+      }, {
         "uid" : "de6d6e0d4d12f710",
         "status" : "failed",
         "statusDetails" : "AssertionError: assert False",
@@ -234,6 +243,6 @@
     },
     "tags" : [ "bad" ]
   },
-  "source" : "ca0c2440a6730f3e.json",
+  "source" : "50692aecd4cbc6c6.json",
   "parameterValues" : [ ]
 }
