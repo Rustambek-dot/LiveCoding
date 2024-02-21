@@ -1,43 +1,20 @@
 name: UI Tests
 
-on:
-  workflow_dispatch:
-      inputs:
-        deployment_target:
-          description: Choose target
-          required: true
-          default: good
-          type: choice
-          options:
-            - good
-            - bad
+on: workflow_dispatch
 
 jobs:
   ui-tests:
     runs-on: ubuntu-latest
-    outputs:
-      good: ${{ steps.good.outcome }}
-      bad: ${{ steps.bad.outcome }}
+
     steps:
       - uses: actions/checkout@v2
 
       - name: Checkout (copy) gh-pages repository to GitHub runner
         uses: actions/checkout@v2
         with:
-            ref: gh-pages
-            path: ./.github/gh-pages
-      - name: install dependencies
-        run: pip install -r requirements.txt
-      - name: good
-        id: good
-        if: "github.event.inputs.deployment_target == 'good'"
-        run: pytest -m good --alluredir=allure-results
-        continue-on-error: true
-      - name: bad
-        id: bad
-        if: "github.event.inputs.deployment_target == 'bad'"
-        run: pytest -m bad --alluredir=allure-results
-        continue-on-error: true
+          ref: gh-pages
+          path: ./.github/gh-pages
+
       - name: Run UI-tests via docker-compose
         env:
           LOGIN: ${{ secrets.LOGIN }}
@@ -53,20 +30,15 @@ jobs:
       - name: Generate Allure report
         run: |
           sudo docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
-      - name: success
-        if: needs.test.outputs.good != 'failure' && needs.test.outputs.bad != 'failure'
-        run: |
-          curl --location 'https://hooks.slack.com/services/${{ secrets.st_slack }}' --header 'Content-Type:application/json' --data '{"text": ":white_check_mark: Тестирование завершено. Отчет доступен здесь: https://rustambek-dot.github.io/LiveCoding/"}'
-      - name: failure
-        if: needs.test.outputs.good == 'failure' || needs.test.outputs.bad == 'failure'
-        run: |
-          curl --location 'https://hooks.slack.com/services/${{ secrets.st_slack }}' --header 'Content-Type:application/json' --data '{"text": ":rage: Тестирование завершено. Отчет доступен здесь: https://rustambek-dot.github.io/LiveCoding/"}'
 
+      - name: Update Allure history
+        run: |
+          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          token: ${{ secrets.CI_TOKEN1 }}
+          token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-report
           clean: true
