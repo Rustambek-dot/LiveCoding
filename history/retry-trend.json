@@ -10,6 +10,11 @@
   }
 }, {
   "data" : {
+    "run" : 2,
+    "retry" : 2
+  }
+}, {
+  "data" : {
     "run" : 3,
     "retry" : 3
   }
@@ -57,11 +62,6 @@
   "data" : {
     "run" : 2,
     "retry" : 1
-  }
-}, {
-  "data" : {
-    "run" : 2,
-    "retry" : 0
   }
 }, {
   "data" : {

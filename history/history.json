@@ -1,14 +1,23 @@
 {
   "0e8b9fd43ab9db5cd07116323b9d06f6" : {
     "statistic" : {
-      "failed" : 13,
+      "failed" : 14,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 15
+      "total" : 16
     },
     "items" : [ {
+      "uid" : "72adda38b010024e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1707755744645,
+        "stop" : 1707755744646,
+        "duration" : 1
+      }
+    }, {
       "uid" : "50692aecd4cbc6c6",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
@@ -166,13 +175,22 @@
   "42b4a115007c35c622675a0baedb491a" : {
     "statistic" : {
       "failed" : 2,
-      "broken" : 11,
+      "broken" : 12,
       "skipped" : 0,
       "passed" : 14,
       "unknown" : 0,
-      "total" : 27
+      "total" : 28
     },
     "items" : [ {
+      "uid" : "44c8c7866fefcbe5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/lib/chromium/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1708523840021,
+        "stop" : 1708523840021,
+        "duration" : 0
+      }
+    }, {
       "uid" : "86f2dab66cbb7f08",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/lib/chromium/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
@@ -333,14 +351,6 @@
         "start" : 1707752682933,
         "stop" : 1707752692627,
         "duration" : 9694
-      }
-    }, {
-      "uid" : "c27c29a12f962aa5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1707751970776,
-        "stop" : 1707751981760,
-        "duration" : 10984
       }
     } ]
   },
