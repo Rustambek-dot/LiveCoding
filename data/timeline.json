@@ -1,81 +1,26 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "DESKTOP",
-    "children" : [ {
-      "name" : "19544-MainThread",
-      "children" : [ {
-        "name" : "Change profile name",
-        "uid" : "1f4d349c67e156c8",
-        "parentUid" : "6e62c2a078860f50b39cd5cc465ad62e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1707769734895,
-          "stop" : 1707769749014,
-          "duration" : 14119
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "6e62c2a078860f50b39cd5cc465ad62e"
-    }, {
-      "name" : "21532-MainThread",
-      "children" : [ {
-        "name" : "test_two",
-        "uid" : "72adda38b010024e",
-        "parentUid" : "4f6063dbdcff45618c328270ce7b08d4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1707755744645,
-          "stop" : 1707755744646,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "4f6063dbdcff45618c328270ce7b08d4"
-    }, {
-      "name" : "14584-MainThread",
-      "children" : [ {
-        "name" : "Change profile name",
-        "uid" : "ff4a339fa78f8c52",
-        "parentUid" : "979a2b65e6f22f7de3634a3e2794d11c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1708180565299,
-          "stop" : 1708180576112,
-          "duration" : 10813
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "979a2b65e6f22f7de3634a3e2794d11c"
-    } ],
-    "uid" : "0c257401e36059c47eb161009319d0d4"
-  }, {
-    "name" : "1dc00cabc4ff",
+    "name" : "952dcf912f87",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
         "name" : "Change profile name",
-        "uid" : "44c8c7866fefcbe5",
-        "parentUid" : "8c89fdd13009ee12bcda38635308d0ba",
+        "uid" : "102411803f0b89fe",
+        "parentUid" : "e05ef7c38377c535fe776c0e43a05276",
         "status" : "broken",
         "time" : {
-          "start" : 1708523840021,
-          "stop" : 1708523840021,
+          "start" : 1708610020509,
+          "stop" : 1708610020509,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8c89fdd13009ee12bcda38635308d0ba"
+      "uid" : "e05ef7c38377c535fe776c0e43a05276"
     } ],
-    "uid" : "416995cd99ccf6a57d80b5a4973a0e2b"
+    "uid" : "b49b373cd89340d696585c8543865047"
   } ],
   "name" : "timeline"
 }

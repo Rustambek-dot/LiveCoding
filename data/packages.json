@@ -3,26 +3,13 @@
   "children" : [ {
     "name" : "tests.feature_profile_test",
     "children" : [ {
-      "name" : "test_two",
-      "uid" : "72adda38b010024e",
-      "parentUid" : "06879556d81935b42ec1b990728e6479",
-      "status" : "failed",
-      "time" : {
-        "start" : 1707755744645,
-        "stop" : 1707755744646,
-        "duration" : 1
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
       "name" : "Change profile name",
-      "uid" : "44c8c7866fefcbe5",
+      "uid" : "102411803f0b89fe",
       "parentUid" : "06879556d81935b42ec1b990728e6479",
       "status" : "broken",
       "time" : {
-        "start" : 1708523840021,
-        "stop" : 1708523840021,
+        "start" : 1708610020509,
+        "stop" : 1708610020509,
         "duration" : 0
       },
       "flaky" : false,
