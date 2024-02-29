@@ -1,5 +1,5 @@
 {
-  "uid" : "db8bcacc973b327f",
+  "uid" : "c64fc502ae39ab20",
   "name" : "Change profile name",
   "fullName" : "tests.feature_profile_test.TestProfileFeature#test_change_profile_name",
   "historyId" : "42b4a115007c35c622675a0baedb491a",
@@ -28,8 +28,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : true,
-    "stepsCount" : 0,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 0
   } ],
   "afterStages" : [ ],
   "labels" : [ {
@@ -77,6 +77,6 @@
     "categories" : [ ],
     "tags" : [ "smoke" ]
   },
-  "source" : "db8bcacc973b327f.json",
+  "source" : "c64fc502ae39ab20.json",
   "parameterValues" : [ ]
 }
